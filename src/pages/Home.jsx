@@ -18,6 +18,13 @@ const Home = () => {
 
 
 
+
+
+
+
+
+
+
 {/* ─── HERO ─── */}
 <section className="w-full flex justify-center pt-8 sm:pt-12 lg:pt-16 px-0">
   <div className="w-full sm:w-[95%] max-w-full sm:max-w-[95%] rounded-none sm:rounded-[2.5rem] glass p-4 sm:p-6 md:p-8 lg:p-12 reveal" ref={useScrollReveal()}>
@@ -54,34 +61,14 @@ const Home = () => {
         <div className="absolute -left-4 top-6 hidden lg:block h-24 w-24 rounded-full bg-cyan-400/20 blur-3xl" />
         <div className="absolute bottom-8 right-0 hidden lg:block h-20 w-20 rounded-full bg-fuchsia-500/20 blur-3xl" />
 
-        
         {/* Main Image Container */}
-        
-<div className="relative overflow-hidden border border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]" style={{ borderRadius: '15px' }}>
-  <img
-    src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
-    alt="Confident trader"
-    className="w-full h-auto"
-    style={{ borderRadius: '15px' }}
-  />
-  {/* Bottom Overlay Card */}
-  <div className="absolute inset-x-2 sm:inset-x-3 md:inset-x-5 bottom-2 sm:bottom-3 md:bottom-5 rounded-lg sm:rounded-xl md:rounded-2xl border border-white/10 bg-slate-950/80 p-2 sm:p-3 md:p-4 backdrop-blur-xl float-anim-delay-3">
-    <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3">
-      <div>
-        <p className="text-[7px] sm:text-[9px] md:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.26em] text-indigo-300">
-          Innovation at work
-        </p>
-        <p className="mt-0.5 sm:mt-1 text-[10px] sm:text-xs md:text-base font-semibold text-white">
-          Building Africa's future
-        </p>
-      </div>
-      <div className="rounded-full bg-emerald-500/15 px-1.5 sm:px-2 md:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[10px] md:text-sm font-medium text-emerald-300 whitespace-nowrap">
-        Live +4.2%
-      </div>
-    </div>
-  </div>
-</div>
-
+        <div className="relative overflow-hidden border border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]" style={{ borderRadius: '15px' }}>
+          <img
+            src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
+            alt="Confident trader"
+            className="w-full h-auto"
+            style={{ borderRadius: '15px' }}
+          />
           {/* Bottom Overlay Card */}
           <div className="absolute inset-x-2 sm:inset-x-3 md:inset-x-5 bottom-2 sm:bottom-3 md:bottom-5 rounded-lg sm:rounded-xl md:rounded-2xl border border-white/10 bg-slate-950/80 p-2 sm:p-3 md:p-4 backdrop-blur-xl float-anim-delay-3">
             <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3">
@@ -128,11 +115,11 @@ const Home = () => {
         </div>
       </div>
     </div>
-   </div>
+  </div>
 </section>
 
 
-
+    
       {/* ─── STATS. ─── */}
   <section className="px-4 pt-6 sm:pt-10 md:pt-12 pb-8 sm:pb-12 max-width">
   <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
