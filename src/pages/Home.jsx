@@ -133,7 +133,30 @@ const Home = () => {
 
 
 
-     
+      {/* ─── STATS ─── */}
+<section className="px-4 pt-6 sm:pt-10 md:pt-12 pb-8 sm:pb-12 max-width">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+    {[
+      { label: "Active Users", value: "50K+" },
+      { label: "Revenue Generated", value: "$10M+" },
+      { label: "Transactions Processed", value: "250K" },
+      { label: "Client Satisfaction", value: "4.9★" },
+    ].map((stat) => (
+      <div
+        key={stat.label}
+        className="glass rounded-2xl p-3 sm:p-4 md:p-6 text-center reveal glass-hover"
+        ref={useScrollReveal()}
+      >
+        <div className="stat-number text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+          {stat.value}
+        </div>
+        <p className="text-white/50 text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2">
+          {stat.label}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
 
     
       {/* ─── PRODUCTS ─── */}
