@@ -15,72 +15,7 @@ const Home = () => {
 
   return (
     <div className="pt-16 bg-[radial-gradient(ellipse_at_top_left,rgba(99,102,241,0.10),transparent_50%),linear-gradient(135deg,#060816_0%,#07111f_50%,#03060d_100%)]">
-      {/* ─── HERO ─── */}
-
-      <section className="section-padding w-full flex justify-center pt-20 sm:pt-24">
-  <div className="w-[95%] max-w-[95%] glass rounded-[2.5rem] p-8 md:p-12 lg:p-16 reveal" ref={useScrollReveal()}>
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      {/* Left: Text Content */}
-      <div>
-        <span className="section-tag">Innovation Hub</span>
-        <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-balance">
-          Technology That Powers
-          <br />
-          <span className="gradient-text">Payments, Property & Digital Experiences</span>
-        </h1>
-        <p className="mt-6 text-lg sm:text-xl text-white/60">
-          We build innovative software products that help businesses grow faster through automation, payments, AI, and digital infrastructure.
-        </p>
-        <div className="flex flex-wrap gap-4 pt-8">
-          <a href="#products" className="btn-primary px-8 py-4 text-base">
-            Explore Products <i className="fas fa-arrow-right ml-2"></i>
-          </a>
-          <Link to="/contact" className="btn-outline px-8 py-4 text-base">
-            Partner With Us
-          </Link>
-        </div>
-        <div className="flex flex-wrap gap-6 text-sm text-white/40 pt-8">
-          <span className="flex items-center gap-2"><i className="fas fa-check-circle text-emerald-400"></i> 5+ Products</span>
-          <span className="flex items-center gap-2"><i className="fas fa-check-circle text-emerald-400"></i> 6+ Industries</span>
-          <span className="flex items-center gap-2"><i className="fas fa-check-circle text-emerald-400"></i> 99.9% Uptime</span>
-        </div>
-      </div>
-
-      {/* Right: Hero Image with Floating Animation */}
-      <div className="relative float-anim">
-        <div className="image-overlay w-full">
-          <img
-            src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
-            alt="Confident trader"
-            className="h-72 md:h-96 w-full object-cover"
-          />
-          <div className="overlay"></div>
-
-          {/* ─── FLOATING STAT CARDS ─── */}
-          <div className="absolute top-4 left-4 glass rounded-2xl p-3 backdrop-blur-xl border border-white/10 float-anim float-anim-delay-1">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/45">Active Users</p>
-            <p className="text-lg font-bold text-white">50K+</p>
-          </div>
-          <div className="absolute top-4 right-4 glass rounded-2xl p-3 backdrop-blur-xl border border-white/10 float-anim float-anim-delay-2">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/45">Revenue</p>
-            <p className="text-lg font-bold text-white">$10M+</p>
-          </div>
-          <div className="absolute bottom-4 left-4 glass rounded-2xl p-3 backdrop-blur-xl border border-white/10 float-anim float-anim-delay-3">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/45">Transactions</p>
-            <p className="text-lg font-bold text-white">250K</p>
-          </div>
-          <div className="absolute bottom-4 right-4 glass rounded-2xl p-3 backdrop-blur-xl border border-white/10 float-anim float-anim-delay-1">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/45">Satisfaction</p>
-            <p className="text-lg font-bold text-white">4.9★</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-{/* HERRO 2 */}
+    
 
       {/* ─── HERO ─── */}
 <section className="section-padding w-full flex justify-center pt-4 sm:pt-6 lg:pt-4">
