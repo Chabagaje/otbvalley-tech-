@@ -181,29 +181,46 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ─── WHY CHOOSE US ─── */}
-      <section id="why" className="section-padding max-width">
-        <div className="neumo rounded-[2.5rem] p-8 md:p-12">
-          <div className="text-center max-w-3xl mx-auto mb-12 reveal" ref={useScrollReveal()}>
-            <span className="section-tag">Why Choose Us</span>
-            <h2 className="mt-4 text-3xl font-bold md:text-5xl">Built for Scale &amp; Reliability</h2>
-            <p className="mt-2 text-white/50">We combine technology, security, and innovation to deliver unmatched value.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {reasons.map((r) => (
-              <div key={r.title} className="glass rounded-2xl p-6 reveal glass-hover" ref={useScrollReveal()}>
-                <div className="flex items-start gap-4">
-                  <div className="text-indigo-300 text-2xl"><i className={`fas ${r.icon}`}></i></div>
-                  <div>
-                    <h4 className="font-bold">{r.title}</h4>
-                    <p className="text-sm text-white/50">{r.desc}</p>
-                  </div>
+     {/* ─── WHY CHOOSE US ─── */}
+<section id="why" className="w-full py-16 md:py-20">
+  <div className="neumo w-full max-w-none px-6 md:px-12 py-12 md:py-16">
+    <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      {/* Left: Text Content */}
+      <div>
+        <div className="text-center md:text-left max-w-3xl mx-auto md:mx-0 mb-8 reveal" ref={useScrollReveal()}>
+          <span className="section-tag">Why Choose Us</span>
+          <h2 className="mt-4 text-3xl font-bold md:text-5xl">Built for Scale &amp; Reliability</h2>
+          <p className="mt-2 text-white/50">We combine technology, security, and innovation to deliver unmatched value.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {reasons.map((r) => (
+            <div key={r.title} className="glass rounded-2xl p-6 reveal glass-hover" ref={useScrollReveal()}>
+              <div className="flex items-start gap-4">
+                <div className="text-indigo-300 text-2xl"><i className={`fas ${r.icon}`}></i></div>
+                <div>
+                  <h4 className="font-bold">{r.title}</h4>
+                  <p className="text-sm text-white/50">{r.desc}</p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* Right: Image */}
+      <div className="relative reveal" ref={useScrollReveal()}>
+        <div className="image-overlay w-full">
+          <img
+            src="https://i.pinimg.com/1200x/1e/2d/b7/1e2db7eec1cbbb72e664d655a1403420.jpg"
+            alt="Beautiful African lady smiling confidently"
+            className="h-80 md:h-[500px] w-full object-cover"
+          />
+          <div className="overlay"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ─── TESTIMONIALS ─── */}
       <section className="section-padding max-width">
