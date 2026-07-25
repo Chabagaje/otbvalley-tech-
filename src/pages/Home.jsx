@@ -120,50 +120,50 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ─── ABOUT PREVIEW (links to /about) ─── */}
-      <section id="about" className="section-padding max-width">
-        <div className="glass rounded-[2.5rem] p-8 md:p-12 lg:p-16 reveal" ref={useScrollReveal()}>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="section-tag">About OTBValley</span>
-              <h2 className="mt-4 text-3xl font-bold md:text-5xl">Building Africa's Tech Future</h2>
-              <p className="mt-4 text-white/60 text-lg">We are a technology innovation company committed to solving complex problems through software.</p>
-              <div className="grid grid-cols-2 gap-4 mt-6">
-                <div>
-                  <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-bolt"></i> <span className="text-white font-medium">Vision</span></div>
-                  <p className="text-sm text-white/50">Africa's leading tech hub.</p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-rocket"></i> <span className="text-white font-medium">Mission</span></div>
-                  <p className="text-sm text-white/50">Transformative tech for real problems.</p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-microchip"></i> <span className="text-white font-medium">Innovation</span></div>
-                  <p className="text-sm text-white/50">Pushing boundaries with emerging tech.</p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-check-circle"></i> <span className="text-white font-medium">Reliability</span></div>
-                  <p className="text-sm text-white/50">99.9% uptime guaranteed.</p>
-                </div>
-                <div className="col-span-2">
-                  <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-lock"></i> <span className="text-white font-medium">Security</span></div>
-                  <p className="text-sm text-white/50">ISO‑certified protocols & data protection.</p>
-                </div>
-              </div>
-              <Link to="/about" className="btn-primary mt-6 inline-block">Learn More <i className="fas fa-arrow-right ml-2"></i></Link>
-            </div>
-            <div className="image-overlay reveal" ref={useScrollReveal()}>
-              <img
-                src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80"
-                alt="African woman working on tech"
-                className="h-80 md:h-96 w-full object-cover"
-              />
-              <div className="overlay"></div>
-            </div>
+     {/* ─── ABOUT PREVIEW (links to /about) ─── */}
+<section id="about" className="w-full py-16 md:py-20">
+  <div className="w-full max-w-none px-6 md:px-12 py-12 md:py-16 bg-gradient-to-br from-indigo-950/80 via-slate-900/90 to-purple-950/80">
+    <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="reveal" ref={useScrollReveal()}>
+        <span className="section-tag">About OTBValley</span>
+        <h2 className="mt-4 text-3xl font-bold md:text-5xl">Building Africa's Tech Future</h2>
+        <p className="mt-4 text-white/60 text-lg">We are a technology innovation company committed to solving complex problems through software.</p>
+        <div className="grid grid-cols-2 gap-4 mt-6">
+          <div>
+            <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-bolt"></i> <span className="text-white font-medium">Vision</span></div>
+            <p className="text-sm text-white/50">Africa's leading tech hub.</p>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-rocket"></i> <span className="text-white font-medium">Mission</span></div>
+            <p className="text-sm text-white/50">Transformative tech for real problems.</p>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-microchip"></i> <span className="text-white font-medium">Innovation</span></div>
+            <p className="text-sm text-white/50">Pushing boundaries with emerging tech.</p>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-check-circle"></i> <span className="text-white font-medium">Reliability</span></div>
+            <p className="text-sm text-white/50">99.9% uptime guaranteed.</p>
+          </div>
+          <div className="col-span-2">
+            <div className="flex items-center gap-2 text-indigo-300"><i className="fas fa-lock"></i> <span className="text-white font-medium">Security</span></div>
+            <p className="text-sm text-white/50">ISO‑certified protocols & data protection.</p>
           </div>
         </div>
-      </section>
-
+        <Link to="/about" className="btn-primary mt-6 inline-block">Learn More <i className="fas fa-arrow-right ml-2"></i></Link>
+      </div>
+      <div className="image-overlay reveal" ref={useScrollReveal()}>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFZxn8EJARNFX-jKvEFZqsWLnMeJ82m03U6XmGGwVsmTNhXdLN"
+          alt="African woman working on tech"
+          className="h-80 md:h-96 w-full object-cover"
+        />
+        <div className="overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+      
       {/* ─── INDUSTRIES ─── */}
       <section id="industries" className="section-padding max-width">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal" ref={useScrollReveal()}>
