@@ -206,6 +206,10 @@ body {
   }
 }
 
+.rounded-15px {
+  border-radius: 15px;
+}
+
 /* ─── Misc ─── */
 .text-balance {
   text-wrap: balance;
