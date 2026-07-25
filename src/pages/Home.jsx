@@ -112,8 +112,8 @@ const Home = () => {
 </section>
 
 
-      {/* ─── STATS ─── */}
-<section className="px-4 py-8 sm:py-12 max-width pt-0">
+     {/* ─── STATS ─── */}
+<section className="px-4 pt-6 sm:pt-10 md:pt-12 pb-8 sm:pb-12 max-width">
   <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
     {[
       { label: "Active Users", value: "50K+" },
