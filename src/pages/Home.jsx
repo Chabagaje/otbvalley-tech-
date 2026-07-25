@@ -120,9 +120,9 @@ const Home = () => {
         </div>
       </section>
 
-     {/* ─── ABOUT PREVIEW (links to /about) ─── */}
+    {/* ─── ABOUT PREVIEW (links to /about) ─── */}
 <section id="about" className="w-full py-16 md:py-20">
-  <div className="w-full max-w-none px-6 md:px-12 py-12 md:py-16 bg-gradient-to-br from-indigo-950/80 via-slate-900/90 to-purple-950/80">
+  <div className="w-full max-w-none px-6 md:px-12 py-12 md:py-16 bg-gradient-to-b from-slate-900/95 to-slate-800/90">
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div className="reveal" ref={useScrollReveal()}>
         <span className="section-tag">About OTBValley</span>
@@ -163,7 +163,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-      
       {/* ─── INDUSTRIES ─── */}
       <section id="industries" className="section-padding max-width">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal" ref={useScrollReveal()}>
