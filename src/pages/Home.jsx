@@ -164,23 +164,6 @@ const Home = () => {
 </section>
       
 
-      {/* ─── STATS ─── */}
-      <section className="section-padding max-width pt-0">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {[
-            { label: "Active Users", value: "50K+" },
-            { label: "Revenue Generated", value: "$10M+" },
-            { label: "Transactions Processed", value: "250K" },
-            { label: "Client Satisfaction", value: "4.9★" },
-          ].map((stat) => (
-            <div key={stat.label} className="glass rounded-2xl p-6 text-center reveal glass-hover" ref={useScrollReveal()}>
-              <div className="stat-number">{stat.value}</div>
-              <p className="text-white/50 text-sm">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ─── PRODUCTS ─── */}
       <section id="products" className="section-padding max-width">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal" ref={useScrollReveal()}>
