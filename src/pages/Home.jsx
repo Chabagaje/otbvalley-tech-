@@ -15,7 +15,102 @@ const Home = () => {
 
   return (
     <div className="pt-16 bg-[radial-gradient(ellipse_at_top_left,rgba(99,102,241,0.10),transparent_50%),linear-gradient(135deg,#060816_0%,#07111f_50%,#03060d_100%)]">
-    
+
+
+{/* ─── HERO ─── */}
+<section className="section-padding w-full flex justify-center pt-8 sm:pt-12 lg:pt-16">
+  <div className="w-full sm:w-[95%] max-w-[95%] rounded-none sm:rounded-[2.5rem] glass p-6 sm:p-8 md:p-12 lg:p-16 reveal" ref={useScrollReveal()}>
+    <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+      {/* Left: Text Content */}
+      <div>
+        <span className="section-tag">Innovation Hub</span>
+        <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-balance">
+          Technology That Powers
+          <br />
+          <span className="gradient-text">Payments, Property & Digital Experiences</span>
+        </h1>
+        <p className="mt-4 md:mt-6 text-base sm:text-lg md:text-xl text-white/60">
+          We build innovative software products that help businesses grow faster through automation, payments, AI, and digital infrastructure.
+        </p>
+        <div className="flex flex-wrap gap-3 sm:gap-4 pt-6 sm:pt-8">
+          <a href="#products" className="btn-primary px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
+            Explore Products <i className="fas fa-arrow-right ml-2"></i>
+          </a>
+          <Link to="/contact" className="btn-outline px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
+            Partner With Us
+          </Link>
+        </div>
+        <div className="flex flex-wrap gap-4 sm:gap-6 text-xs sm:text-sm text-white/40 pt-6 sm:pt-8">
+          <span className="flex items-center gap-2"><i className="fas fa-check-circle text-emerald-400"></i> 5+ Products</span>
+          <span className="flex items-center gap-2"><i className="fas fa-check-circle text-emerald-400"></i> 6+ Industries</span>
+          <span className="flex items-center gap-2"><i className="fas fa-check-circle text-emerald-400"></i> 99.9% Uptime</span>
+        </div>
+      </div>
+
+      {/* Right: Hero Image with Floating Cards (mirroring the crypto pattern) */}
+      <div className="relative mx-auto w-full max-w-full sm:max-w-[520px] float-anim mt-6 md:mt-0">
+        {/* Background glow orbs */}
+        <div className="absolute -left-4 top-6 hidden lg:block h-24 w-24 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="absolute bottom-8 right-0 hidden lg:block h-20 w-20 rounded-full bg-fuchsia-500/20 blur-3xl" />
+
+        {/* Main Image Container */}
+        <div className="relative overflow-hidden rounded-none sm:rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-2 sm:p-3 md:p-4 shadow-2xl lg:rotate-[-2deg]">
+          <img
+            src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
+            alt="Confident trader"
+            className="w-full h-auto rounded-none sm:rounded-[1.25rem]"
+          />
+
+          {/* Bottom Overlay Card - hidden on very small screens, visible on sm+ */}
+          <div className="absolute inset-x-3 sm:inset-x-5 bottom-3 sm:bottom-5 rounded-xl sm:rounded-2xl border border-white/10 bg-slate-950/80 p-3 sm:p-4 backdrop-blur-xl float-anim-delay-3">
+            <div className="flex items-center justify-between gap-2 sm:gap-3">
+              <div>
+                <p className="text-[9px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.26em] text-indigo-300">
+                  Innovation at work
+                </p>
+                <p className="mt-0.5 sm:mt-1 text-xs sm:text-base font-semibold text-white">
+                  Building Africa's future
+                </p>
+              </div>
+              <div className="rounded-full bg-emerald-500/15 px-2 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-sm font-medium text-emerald-300">
+                Live +4.2%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ─── FLOATING CARDS (repositioned for mobile) ─── */}
+
+        {/* Card 1: Top Left */}
+        <div className="absolute -bottom-3 sm:-bottom-4 left-2 sm:left-3 rounded-xl sm:rounded-2xl border border-white/10 bg-white/10 p-2 sm:p-3 backdrop-blur-xl lg:rotate-[-4deg] float-anim-delay-1">
+          <p className="text-[8px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.24em] text-white/45">Active Users</p>
+          <p className="mt-0.5 sm:mt-1 text-sm sm:text-lg font-semibold text-white">50K+</p>
+        </div>
+
+        {/* Card 2: Top Right */}
+        <div className="absolute -right-1 sm:-right-2 top-2 sm:top-4 rounded-xl sm:rounded-2xl border border-white/10 bg-slate-950/70 p-2 sm:p-3 backdrop-blur-xl lg:rotate-[4deg] float-anim-delay-2">
+          <p className="text-[8px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.24em] text-white/45">Revenue</p>
+          <p className="mt-0.5 sm:mt-1 text-sm sm:text-lg font-semibold text-white">$10M+</p>
+          <p className="text-[8px] sm:text-sm text-emerald-400">+12.4%</p>
+        </div>
+
+        {/* Card 3: Bottom Left (extra) */}
+        <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-3 rounded-xl sm:rounded-2xl border border-white/10 bg-white/10 p-2 sm:p-3 backdrop-blur-xl lg:rotate-[-4deg] float-anim-delay-3">
+          <p className="text-[8px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.24em] text-white/45">Transactions</p>
+          <p className="mt-0.5 sm:mt-1 text-sm sm:text-lg font-semibold text-white">250K</p>
+        </div>
+
+        {/* Card 4: Right Bottom (extra) */}
+        <div className="absolute -right-1 sm:-right-2 bottom-8 sm:bottom-12 rounded-xl sm:rounded-2xl border border-white/10 bg-slate-950/70 p-2 sm:p-3 backdrop-blur-xl lg:rotate-[4deg] float-anim-delay-1">
+          <p className="text-[8px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.24em] text-white/45">Satisfaction</p>
+          <p className="mt-0.5 sm:mt-1 text-sm sm:text-lg font-semibold text-white">4.9★</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
 
       {/* ─── HERO ─── */}
 <section className="section-padding w-full flex justify-center pt-4 sm:pt-6 lg:pt-4">
