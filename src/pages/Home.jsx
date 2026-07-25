@@ -154,7 +154,7 @@ const Home = () => {
       </div>
       <div className="image-overlay reveal" ref={useScrollReveal()}>
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFZxn8EJARNFX-jKvEFZqsWLnMeJ82m03U6XmGGwVsmTNhXdLN"
+          src="https://i.pinimg.com/1200x/a7/f2/0e/a7f20efe1269e9d5acbcf986e7d1b476.jpg"
           alt="African woman working on tech"
           className="h-80 md:h-96 w-full object-cover"
         />
