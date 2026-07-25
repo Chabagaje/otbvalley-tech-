@@ -16,14 +16,7 @@ const Home = () => {
   return (
     <div className="pt-16 bg-[radial-gradient(ellipse_at_top_left,rgba(99,102,241,0.10),transparent_50%),linear-gradient(135deg,#060816_0%,#07111f_50%,#03060d_100%)]">
 
-
-
-
-
-
-
-
-
+      
 
 {/* ─── HERO ─── */}
 <section className="w-full flex justify-center pt-8 sm:pt-12 lg:pt-16 px-0">
