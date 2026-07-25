@@ -55,12 +55,38 @@ const Home = () => {
         <div className="absolute bottom-8 right-0 hidden lg:block h-20 w-20 rounded-full bg-fuchsia-500/20 blur-3xl" />
 
         {/* Main Image Container */}
-        <div className="relative overflow-hidden rounded-5 sm:rounded-[1.75rem] border-5 border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]">
+        {/* <div className="relative overflow-hidden rounded-5 sm:rounded-[1.75rem] border-5 border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]">
           <img
             src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
             alt="Confident trader"
-            className="w-full h-auto rounded-5 sm:rounded-[1.25rem]"
-          />
+            className="w-full h-auto rounded- sm:rounded-[1.25rem]"
+          /> */}
+
+        {/* Main Image Container */}
+<div className="relative overflow-hidden border border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]" style={{ borderRadius: '15px' }}>
+  <img
+    src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
+    alt="Confident trader"
+    className="w-full h-auto"
+    style={{ borderRadius: '15px' }}
+  />
+  {/* Bottom Overlay Card */}
+  <div className="absolute inset-x-2 sm:inset-x-3 md:inset-x-5 bottom-2 sm:bottom-3 md:bottom-5 rounded-lg sm:rounded-xl md:rounded-2xl border border-white/10 bg-slate-950/80 p-2 sm:p-3 md:p-4 backdrop-blur-xl float-anim-delay-3">
+    <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3">
+      <div>
+        <p className="text-[7px] sm:text-[9px] md:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.26em] text-indigo-300">
+          Innovation at work
+        </p>
+        <p className="mt-0.5 sm:mt-1 text-[10px] sm:text-xs md:text-base font-semibold text-white">
+          Building Africa's future
+        </p>
+      </div>
+      <div className="rounded-full bg-emerald-500/15 px-1.5 sm:px-2 md:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[10px] md:text-sm font-medium text-emerald-300 whitespace-nowrap">
+        Live +4.2%
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* Bottom Overlay Card */}
           <div className="absolute inset-x-2 sm:inset-x-3 md:inset-x-5 bottom-2 sm:bottom-3 md:bottom-5 rounded-lg sm:rounded-xl md:rounded-2xl border border-white/10 bg-slate-950/80 p-2 sm:p-3 md:p-4 backdrop-blur-xl float-anim-delay-3">
