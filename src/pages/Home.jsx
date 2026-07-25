@@ -55,7 +55,7 @@ const Home = () => {
         <div className="absolute bottom-8 right-0 hidden lg:block h-20 w-20 rounded-full bg-fuchsia-500/20 blur-3xl" />
 
         {/* Main Image Container */}
-        <div className="relative overflow-hidden rounded-none sm:rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]">
+        <div className="relative overflow-hidden rounded-5 sm:rounded-[1.75rem] border-5 border-white/10 bg-slate-950/70 p-1.5 sm:p-2 md:p-3 shadow-2xl lg:rotate-[-2deg]">
           <img
             src="https://i.pinimg.com/1200x/71/2f/69/712f695a86d70768dfa6365861ac9ca9.jpg"
             alt="Confident trader"
